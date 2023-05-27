@@ -26,13 +26,19 @@
     data-spy="scroll"
     data-target="#navbar"
     data-offset="72"
-    class="position-relative"
+    class="position-relative bg-primary-color"
     onload="loadMap()"
   >
+   <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
     <header class="fixed-top page-header bg-green">
       <div class="container-fluid container-fluid-max">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="./index.html">Vai com Gulliver</a>
+          <a class="navbar-brand" href="./home.html">Vai com Gulliver</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -54,6 +60,12 @@
               </li>
             </ul>
             <div class="text-white">
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label d-none d-xl-inline mr-2" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
               <a href="" class="mr-2">
                 <i class="fas fa-phone"></i>
                 <div class="d-none d-xl-inline">1234567890</div>
@@ -77,14 +89,14 @@
         <div class="container-fluid container-fluid-max">
           <div class="row">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <h1 class="text-white">
-                Aqui você encontra os melhores hotéis e passagens .
+              <h1 class="text-second-color">
+                Aqui você encontra os melhores hotéis e passagens
               </h1>
               <div class="mt-3">
-                <a class="btn bg-green text-white mr-2" href="" role="button"
+                <a class="btn bg-second-color text-third-color mr-2" href="" role="button"
                   >Dicas em alta</a
                 >
-                <a class="btn bg-green text-white" href="" role="button"
+                <a class="btn bg-second-color text-third-color" href="" role="button"
                   >Pacotes Promocionais</a
                 >
               </div>
@@ -96,11 +108,11 @@
       <section class="container-fluid container-fluid-max mt-5">
         <div class="col-12 text-center">
           <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-green"></i>
-            <i class="fas fa-map-marked fa-stack-1x text-white"></i>
+            <i class="fas fa-circle fa-stack-2x text-second-color"></i>
+            <i class="fas fa-map-marked fa-stack-1x text-third-color"></i>
           </span>
-          <h3 class="mt-3 text-green h4">Sua localizacão</h3>
-          <p>Aqui está sua localização em tempo real.</p>
+          <h3 class="mt-3 text-second-color h4">Sua localizacão</h3>
+          <p class="text-second-color">Aqui está sua localização em tempo real.</p>
         </div>
         <div
           class="col-12 col-md-auto d-flex justify-content-center align-items-center mt-5"
@@ -111,11 +123,11 @@
       <section class="container-fluid container-fluid-max mt-5">
         <div class="col-12 text-center">
           <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-green"></i>
-            <i class="fas fa-plane fa-stack-1x text-white"></i>
+            <i class="fas fa-circle fa-stack-2x text-second-color"></i>
+            <i class="fas fa-plane fa-stack-1x text-third-color"></i>
           </span>
-          <h3 class="mt-3 text-green h4">Passagem Aéreas</h3>
-          <p>Encontre os melhores precos para sua próxima passagem aérea.</p>
+          <h3 class="mt-3 text-second-color h4">Passagem Aéreas</h3>
+          <p class="text-second-color">Encontre os melhores precos para sua próxima passagem aérea.</p>
         </div>
         <div class="card-deck row d-flex justify-content-center">
 
@@ -147,7 +159,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn bg-green text-white">Comprar agora</a>
+              <a href="#" class="btn bg-second-color text-third-color">Comprar agora</a>
             </div>
           </div>
 
@@ -163,7 +175,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn bg-green text-white">Comprar agora</a>
+              <a href="#" class="btn bg-second-color text-third-color">Comprar agora</a>
             </div>
           </div>
 
@@ -179,7 +191,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn bg-green text-white">Comprar agora</a>
+              <a href="#" class="btn bg-second-color text-third-color">Comprar agora</a>
             </div>
           </div>
 
@@ -195,7 +207,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn bg-green text-white">Comprar agora</a>
+              <a href="#" class="btn bg-second-color text-third-color">Comprar agora</a>
             </div>
           </div>
 
@@ -211,7 +223,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn bg-green text-white">Comprar agora</a>
+              <a href="#" class="btn bg-second-color text-third-color">Comprar agora</a>
             </div>
           </div>          
       </section>
@@ -219,11 +231,11 @@
        <section class="container-fluid container-fluid-max mt-5">
         <div class="col-12 text-center">
           <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-green"></i>
-            <i class="fas fa-car fa-stack-1x text-white"></i>
+            <i class="fas fa-circle fa-stack-2x text-second-color"></i>
+            <i class="fas fa-car fa-stack-1x text-third-color"></i>
           </span>
-          <h3 class="mt-3 text-green h4">Alugar veículo</h3>
-          <p>Aqui você pode escolher o melhor transporte para te acompanhar na sua viagem.</p>
+          <h3 class="mt-3 text-second-color h4">Alugar veículo</h3>
+          <p class="text-second-color">Aqui você pode escolher o melhor transporte para te acompanhar na sua viagem.</p>
         </div>
 
         <div class="card-deck row d-flex justify-content-center">
@@ -263,11 +275,11 @@
       <section class="container-fluid container-fluid-max mt-5">
         <div class="col-12 text-center">
           <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-green"></i>
-            <i class="fas fa-home fa-stack-1x text-white"></i>
+            <i class="fas fa-circle fa-stack-2x text-second-color"></i>
+            <i class="fas fa-home fa-stack-1x text-third-color"></i>
           </span>
-          <h3 class="mt-3 text-green h4">Encontre um hotel</h3>
-          <p>
+          <h3 class="mt-3 text-second-color h4">Encontre um hotel</h3>
+          <p class="text-second-color">
             Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
           </p>
@@ -275,7 +287,7 @@
       </section>  
 
       <div class="container">
-        <h3 class="my-5 text-center text-green">Formulário de Reserva de Hotel</h2>
+        <h3 class="my-5 text-center text-second-color">Formulário de Reserva de Hotel</h2>
         <form>
           <div class="mb-3">
             <label for="inputDestino" class="form-label">Destino</label>
@@ -363,6 +375,11 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="./js/themeToogle.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/map.js"></script>
   </body>

@@ -1,6 +1,15 @@
 :root {
-  --lightblue: ##f5f5f5;
-  --green: #228a64;
+  --primary-color: #f5f5f5;
+  --second-color: #228a64;
+  --tertiary-color: #ffffff;
+  --bg-toogle: #111111;
+}
+
+.dark:root {
+  --primary-color: #878787;
+  --second-color: #111111;
+  --tertiary-color: #55a381;
+  --bg-toogle: #228a64;
 }
 
 a,
@@ -12,16 +21,20 @@ a:hover {
   text-decoration: none;
 }
 
-.bg-lightblue {
-  background: var(--lightblue);
+.bg-primary-color {
+  background: var(--primary-color);
 }
 
-.bg-green {
-  background: var(--green);
+.bg-second-color {
+  background: var(--second-color);
 }
 
-.text-green {
-  color: var(--green);
+.text-second-color {
+  color: var(--second-color);
+}
+
+.text-third-color {
+  color: var(--tertiary-color);
 }
 
 .container-fluid-max {
@@ -36,10 +49,20 @@ a:hover {
   padding: 15px;
 }
 
+.btn {
+  background: var(--second-color);
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  background: var(--second-color);
+  color: var(--primary-color);
+}
+
 /* SCROLL ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .scroll .page-header {
-  background: var(--green);
+  background: var(--second-color);
 }
 
 .scroll .hero {
@@ -48,6 +71,10 @@ a:hover {
 
 /* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.login-header {
+  background: var(--second-color);
+}
+
 .page-header {
   transition: background 0.5s ease-in-out;
 }
@@ -58,6 +85,46 @@ a:hover {
 
 .page-header .navbar-toggler {
   border-color: var(--white);
+}
+
+/* THEME
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--bg-toogle);
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  height: 18px;
+  width: 18px;
+  transform: translateX(5px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+  padding-left: 1px;
 }
 
 /* BANNER SECTION
@@ -120,7 +187,7 @@ a:hover {
 /* MEDIUM SCREENS */
 @media screen and (max-width: 991px) {
   .page-header {
-    background: var(--green);
+    background: var(--second-color);
   }
 }
 
