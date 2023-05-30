@@ -206,6 +206,10 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* MEDIUM SCREENS */
 @media screen and (max-width: 991px) {
+  .btn-mobile {
+    margin-bottom: 0;
+  }
+
   .page-header {
     background: var(--primary);
   }
@@ -227,15 +231,18 @@ a:hover {
     );
   }
 
-  .text-second-color {
+  .text-mobile {
     color: #FFFFFF;  
-  }
-
-  .btn-mobile {
-    margin-bottom: 1rem;
   }
 
   .page-footer .footer-child {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 360px) {
+  .btn-mobile {
+    margin-bottom: 0.5rem;
+  }
+
 }
