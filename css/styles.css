@@ -1,15 +1,17 @@
 :root {
-  --primary-color: #f5f5f5;
-  --second-color: #228a64;
-  --tertiary-color: #ffffff;
-  --bg-toogle: #111111;
+  --primary: #FFBA49;
+  --secondy: #F5F5F5;
+  --thirdy: #d95d39;
+  --fourth: #111111; 
+  --sixth:  #FFBA49; 
 }
 
 .dark:root {
-  --primary-color: #878787;
-  --second-color: #111111;
-  --tertiary-color: #55a381;
-  --bg-toogle: #228a64;
+  --primary: #272525;
+  --secondy: #474747;   
+  --thirdy: #e6b31a;
+  --fourth: #F5F5F5;
+  --sixth: #F5F5F5; 
 }
 
 a,
@@ -21,20 +23,25 @@ a:hover {
   text-decoration: none;
 }
 
-.bg-primary-color {
-  background: var(--primary-color);
+.bg-body {
+  background: var(--secondy);
 }
 
-.bg-second-color {
-  background: var(--second-color);
+.primary-color {
+  background: var(--primary);
+}
+
+.text-primary-color {
+  color: var(--sixth);
+  font-weight: bold;
 }
 
 .text-second-color {
-  color: var(--second-color);
+  color: var(--fourth);  
 }
 
 .text-third-color {
-  color: var(--tertiary-color);
+  color: var(--secondy);
 }
 
 .container-fluid-max {
@@ -50,19 +57,20 @@ a:hover {
 }
 
 .btn {
-  background: var(--second-color);
-  color: var(--primary-color);
+  background: var(--thirdy);
+  color: var(--secondy);
+  font-weight: bold;
 }
 
 .btn:hover {
-  background: var(--second-color);
-  color: var(--primary-color);
+  background: var(--thirdy);
+  color: var(--secondy);
 }
 
 /* SCROLL ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .scroll .page-header {
-  background: var(--second-color);
+  background: var(--primary);
 }
 
 .scroll .hero {
@@ -72,11 +80,17 @@ a:hover {
 /* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .login-header {
-  background: var(--second-color);
+  background: var(--primary);
+}
+
+.bg-header {
+  color: var(--fourth);
+  font-weight: bold;
+
 }
 
 .page-header {
-  transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;  
 }
 
 .page-header .navbar {
@@ -95,7 +109,7 @@ a:hover {
 }
 
 .label {
-  background-color: var(--bg-toogle);
+  background-color: var(--thirdy);
   border-radius: 50px;
   cursor: pointer;
   padding: 5px;
@@ -119,11 +133,11 @@ a:hover {
 }
 
 .fa-moon {
-  color: #f1c40f;
+  color: #474747;
 }
 
 .fa-sun {
-  color: #f39c12;
+  color: #FFBA49;
   padding-left: 1px;
 }
 
@@ -180,6 +194,12 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer .footer-links {
   text-align: right;
+  font-size: 1.5rem;
+}
+
+.core {
+  color: var(--thirdy);
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES
@@ -187,7 +207,7 @@ a:hover {
 /* MEDIUM SCREENS */
 @media screen and (max-width: 991px) {
   .page-header {
-    background: var(--second-color);
+    background: var(--primary);
   }
 }
 
