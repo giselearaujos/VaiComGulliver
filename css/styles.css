@@ -213,6 +213,28 @@ a:hover {
 
 /* SMALL SCREENS */
 @media screen and (max-width: 767px) {
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.85) 0,
+      rgba(0, 0, 0, 0.472) 50%,
+      rgba(0, 0, 0, 0.508) 100%
+    );
+  }
+
+  .text-second-color {
+    color: #FFFFFF;  
+  }
+
+  .btn-mobile {
+    margin-bottom: 1rem;
+  }
+
   .page-footer .footer-child {
     text-align: center;
   }
