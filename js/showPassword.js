@@ -15,7 +15,7 @@ function login(event) {
   var email = document.getElementById("username").value;
   var senha = document.getElementById("password").value;
 
-  if (email === "teste@teste.com" && senha === "teste") {
+  if (email === "jose@email.com" && senha === "teste") {
     console.log("Login realizado com sucesso!");   
     window.location.href = "home.html";
   } else {    
