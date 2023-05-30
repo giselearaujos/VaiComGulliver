@@ -49,8 +49,8 @@ Você pode visualizar a aplicação do projeto através [DESSE LINK]()
 - [x] Implementado responsividade.
 - [x] Adicionado requisição ao MapQuest onde mostra a localização do usuário em uma mapa estático.
 - [x] Adicionado página de hospedagem no projeto.
-- [ ] Adicionado dark mode.
-- [ ] Adicionado VLibras.
+- [x] Adicionado dark mode.
+- [x] Adicionado VLibras.
 
 ## :memo: Licença
 
