@@ -30,6 +30,10 @@ function login(event) {
     // Login inválido
     alert("Email e senha incorretos!");
     console.log("E-mail ou senha incorretos. Por favor, tente novamente.");
+
+       // Limpar os campos de e-mail e senha
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
     // Aqui você pode exibir uma mensagem de erro para o usuário
   }
 }
